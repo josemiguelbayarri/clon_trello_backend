@@ -62,7 +62,7 @@ const UserController = {
     },
     async logout(req, res) {
         try {
-            const id = req.user.id
+            /* const id = req.user.id */
             const user = await User.destroy({
                 where : {
                     token : req.headers.authorization
