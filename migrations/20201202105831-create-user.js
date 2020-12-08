@@ -11,10 +11,16 @@ module.exports = {
       email: {
         type: Sequelize.STRING
       },
+      image: {
+        type: Sequelize.TEXT
+      },
       name: {
         type: Sequelize.STRING
       },
       password: {
+        type: Sequelize.STRING
+      },
+      token: {
         type: Sequelize.STRING
       },
       createdAt: {
