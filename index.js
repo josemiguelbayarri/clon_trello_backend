@@ -17,4 +17,9 @@ app.use((req, res, next) => {
 const usersRouter = require('./routes/users');
 app.use('/users', usersRouter);
 
+const boardsRouter = require('./routes/boards');
+app.use('/boards', boardsRouter);
+
+
+
 app.listen(PORT, () => console.log('server running on port ' + PORT))
