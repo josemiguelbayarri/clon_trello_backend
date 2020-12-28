@@ -20,6 +20,9 @@ app.use('/users', usersRouter);
 const boardsRouter = require('./routes/boards');
 app.use('/boards', boardsRouter);
 
+const planksRouter = require('./routes/planks');
+app.use('/planks', planksRouter);
+
 
 
 app.listen(PORT, () => console.log('server running on port ' + PORT))
