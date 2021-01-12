@@ -12,14 +12,14 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       Plank.belongsTo(models.Board)
-      Plank.hasMany(models.Task) 
+      /* Plank.hasMany(models.Task)  */
       // define association here
     }
   };
   Plank.init({
     name: DataTypes.STRING,
     boardId: DataTypes.INTEGER,
-    tasksId: DataTypes.ARRAY(DataTypes.INTEGER)
+    /* tasksId: DataTypes.ARRAY(DataTypes.INTEGER) */
   }, {
     sequelize,
     modelName: 'Plank',

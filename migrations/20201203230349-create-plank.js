@@ -11,27 +11,12 @@ module.exports = {
       name: {
         type: Sequelize.STRING
       },
-      userId: {
+      boardId: {
         type: Sequelize.INTEGER
       },
-      description: {
-        type: Sequelize.TEXT
-      },
-      image: {
-        type: Sequelize.TEXT
-      },
-      activity: {
-        type: Sequelize.STRING
-      },
-      labelsId: {
-        type: Sequelize.INTEGER
-      },
-      documents: {
-        type: Sequelize.TEXT
-      },
-      expirationDate: {
-        type: Sequelize.DATE
-      },
+      /* tasksId: {
+        type: Sequelize.ARRAY(Sequelize.INTEGER)
+      }, */
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE
