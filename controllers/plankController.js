@@ -27,6 +27,20 @@ const PlankController = {
             .send({ message: "Algo ha fallado y la lista no ha sido encontrada" });
         }
       },
+      async delete(req,res) {
+        try {
+            const { id } = req.params
+            const plank = await Plank.destroy({
+                where : {
+                    id : id
+                }
+            })
+            res.status(200).send({ message : 'la lista fue eliminada'})
+        } catch (error) {
+            console.log(error)
+            res.status(500).send({ message : 'Algo ha fallado y la lista no ha sido eliminada'})
+        }
+    } 
 }
 
 module.exports = PlankController;
