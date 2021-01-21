@@ -23,6 +23,9 @@ app.use('/boards', boardsRouter);
 const planksRouter = require('./routes/planks');
 app.use('/planks', planksRouter);
 
+const tasksRouter = require('./routes/tasks');
+app.use('/tasks', tasksRouter);
+
 
 
 app.listen(PORT, () => console.log('server running on port ' + PORT))
